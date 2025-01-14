@@ -15,8 +15,10 @@ Route::get('/home', function (Request $request) {
 });
 
 Route::apiResource('/cours', App\Http\Controllers\CoursController::class);
-// Route::apiResource('/audio', App\Http\Controllers\AudioController::class);
-Route::post('/audios', [App\Http\Controllers\AudioController::class, 'store']);
+Route::apiResource('/audio', App\Http\Controllers\AudioController::class);
+
+// Route::put('/coursmodif/{id}', [App\Http\Controllers\CoursController::class, 'modifCours']);
+
 
 
 
